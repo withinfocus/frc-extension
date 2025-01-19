@@ -1,0 +1,17 @@
+{
+    "name": "GitHub Copilot Extensions Codespace",
+    "image": "mcr.microsoft.com/devcontainers/universal:2-linux",
+    "forwardPorts": ["3000:3000"],
+    "portsAttributes": {
+        "3000": {
+            "label": "Copilot-Extension-Service",
+            "onAutoForward": "silent"
+        }
+    },
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "extensions": ["GitHub.copilot"]
+        }
+    }
+}

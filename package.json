@@ -1,9 +1,13 @@
 {
     "name": "@withinfocus/frc-extension",
     "version": "0.0.0",
+    "type": "module",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/withinfocus/frc-extension.git"
+    },
+    "dependencies": {
+        "express": "^4.19.2"
     },
     "devDependencies": {
         "husky": "9.1.7",
@@ -14,6 +18,8 @@
         "*": "prettier --write --ignore-unknown"
     },
     "scripts": {
-        "prepare": "husky"
+        "prepare": "husky",
+        "start": "node index.js",
+        "dev": "node --watch index.js"
     }
 }

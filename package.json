@@ -7,7 +7,7 @@
         "url": "git+https://github.com/withinfocus/frc-extension.git"
     },
     "dependencies": {
-        "express": "^4.19.2"
+        "express": "^5.1.0"
     },
     "devDependencies": {
         "husky": "9.1.7",
